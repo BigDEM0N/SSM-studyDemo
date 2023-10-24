@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+        id="testBean"得到的是getObject()的返回值
+        id="&testBean"得到的是factorybean
+    -->
+    <bean id="testBean" class="com.example.factorybean.TestBeanFactoryBean">
+        <!-- 这里设置的properties是写入工厂类方法-->
+    </bean>
+</beans>
