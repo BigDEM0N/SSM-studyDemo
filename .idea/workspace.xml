@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0b15d90-b867-4bcb-b2b4-edfbbc29850f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ioc-xml-lab1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ioc-xml/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ioc-annotation-Lab2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ioc-annotation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSM笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/SSM笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="spring-beans.schema" />
         <option value="Interface" />
+        <option value="spring-beans.schema" />
         <option value="Class" />
       </list>
     </option>
@@ -41,8 +39,13 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2XCO7iwXpg2pOSILFzxAmQChhby" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,56 +61,91 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/._Work/Code/LearningDemo/SSM-studyDemo/ioc-annotation-Lab2/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "0fa894d082671d543b51bd20cd226698",
+    "spring.configuration.checksum": "0120226cbc848391edf999b6dcd4db6c",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.Lab1Application">
-    <configuration name="JdbcTemplateTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ioc-xml-lab1" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\._Work\Code\LearningDemo\SSM-studyDemo\ioc-annotation-Lab2\src\main\resources" />
+      <recent name="D:\._Work\Code\LearningDemo\SSM-studyDemo\ioc-annotation-Lab2\src\main\java\com\example" />
+      <recent name="D:\._Work\Code\LearningDemo\SSM-studyDemo\ioc-annotation-Lab2\src\main\java" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Lab2Test.test1">
+    <configuration name="IocAnnotation01Test.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioc-annotation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.jdbc.*" />
+          <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.JdbcTemplateTest" />
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.IocAnnotation01Test" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IocAnnotation01Test.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioc-annotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.IocAnnotation01Test" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lab2Test.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ioc-annotation-Lab2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example" />
+      <option name="MAIN_CLASS_NAME" value="com.example.Lab2Test" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcTemplateTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ioc-xml-lab1" />
+    <configuration name="IocAnnotationLab2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ioc-annotation-Lab2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.IocAnnotationLab2Application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.jdbc.*" />
+          <option name="PATTERN" value="com.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.example.jdbc.JdbcTemplateTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestBeanFactoryBeanTests.factoryBeanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ioc-xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestBeanFactoryBeanTests" />
-      <option name="METHOD_NAME" value="factoryBeanTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,10 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Lab2Test.test1" />
+        <item itemvalue="Spring Boot.IocAnnotationLab2Application" />
+        <item itemvalue="JUnit.IocAnnotation01Test.test01" />
+        <item itemvalue="JUnit.IocAnnotation01Test.test02" />
         <item itemvalue="Spring Boot.Lab1Application" />
-        <item itemvalue="JUnit.JdbcTemplateTest.test2" />
-        <item itemvalue="JUnit.JdbcTemplateTest.test1" />
-        <item itemvalue="JUnit.TestBeanFactoryBeanTests.factoryBeanTest" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +183,10 @@
       <updated>1698129429925</updated>
       <workItem from="1698129431584" duration="3379000" />
       <workItem from="1698143404223" duration="2058000" />
-      <workItem from="1698145573514" duration="3193000" />
+      <workItem from="1698145573514" duration="4938000" />
+      <workItem from="1698236841542" duration="3210000" />
+      <workItem from="1698292713380" duration="7127000" />
+      <workItem from="1698378257811" duration="1196000" />
     </task>
     <servers />
   </component>

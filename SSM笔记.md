@@ -312,3 +312,103 @@ ps：FactoryBean和BeanFactory的区别
 
 ##### 实验Lab1
 
+#### 基于注解配置ioc
+
+##### 组件标记注解和区别
+
+- `@Component`
+- `@Repository`
+- `@Service`
+- `@Controller`
+
+区别：标记不同业务层的组件
+
+通过以下方式将注解扫描到ioc容器中
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 普通配置包扫描-->
+    <context:component-scan base-package="com.example"/>
+    <!-- 指定包但是排除注解-->
+    <context:component-scan base-package="com.example">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+    <!-- 指定包指定注解 use-default-filter注解表示外层失效-->
+    <context:component-scan base-package="com.example" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+</beans>
+```
+
+##### 拓展周期方法和作用域
+
+周期方法的声明
+
+```java
+@Component
+public class BeanOne{
+    @PostConstruct
+    public void init(){
+        //初始化逻辑
+    }
+}
+
+@Component
+public class BeanTwo{
+    @PreDestory
+    public void cleanup{
+        //释放资源逻辑
+    }
+}
+```
+
+作用域的注解
+
+```java
+@Scope()
+```
+
+##### 使用注解进行DI（引用类型）
+
+在**属性、构造方法和setter方法**上加上`@Autowired`注解
+
+`@Autowired`根据属性类型从ioc容器中查找
+
+如果同一个类型有多个对应的组件，无法选择。解决方法：1.默认根据属性名进行查找 2.`@Qualifier(value="xxx")`进行选择
+
+`@Resource` = `@Autowired`+`@Qualifier`
+
+##### 使用注解进行DI（基本类型）
+
+@Value
+
+properties
+
+##### 实验Lab2
+
+Q：通过`<bean>`标签配置的jdbcTemplate组件不能自动注入？需要先实例化ioc容器，再使用？？？
+
+#### 完全注解配置方式
+
+使用配置类来代替xml文件对组件进行配置
+
+**但是以上三种都需要ApplicationContext来获取ioc容器**
+
+##### 声明第三方类
+
+```java
+//
+@Bean
+public class JavaConfiguration {
+    public DruidDataSource dataSource(){
+        DruidDataSource dataSource = new DruidDataSource();
+        dataSource.setUrl();
+    }
+}
+```
+

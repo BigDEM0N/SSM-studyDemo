@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 普通配置包扫描-->
+    <context:component-scan base-package="com.example"/>
+    <!-- 指定包但是排除注解-->
+<!--    <context:component-scan base-package="com.example">-->
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+<!--    &lt;!&ndash; 指定包指定注解 use-default-filter注解表示外层失效&ndash;&gt;-->
+<!--    <context:component-scan base-package="com.example" use-default-filters="false">-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--    </context:component-scan>-->
+
+    <context:property-placeholder location="classpath:config.properties"/>
+</beans>

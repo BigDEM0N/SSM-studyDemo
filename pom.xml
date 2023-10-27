@@ -12,6 +12,8 @@
 
         <module>ioc-xml</module>
         <module>ioc-xml-lab1</module>
+        <module>ioc-annotation</module>
+        <module>ioc-annotation-Lab2</module>
     </modules>
 
     <properties>
